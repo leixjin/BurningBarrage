@@ -28,9 +28,14 @@
     [self.engine addBarragr:barrage handle:^(CABasicAnimation *animation) {
         [weakSelf.layer addSublayer:barrage.barrageLayer];
         [barrage.barrageLayer addAnimation:animation forKey:@""];
+        [weakSelf performSelector:@selector(removeLayer:) withObject:barrage.barrageLayer afterDelay:barrage.duration];
     }];
     
     self.barrageWorking = YES;
+}
+
+- (void)removeLayer:(CATextLayer *)layer {
+    [layer removeFromSuperlayer];
 }
 
 #pragma 弹幕动画控制(暂停、恢复)

@@ -11,7 +11,7 @@
 
 @interface BBBarrageView : UIView
 
-/**the height of the track. default is barrage height.*/
+/**The height of the track. Default is barrage height.*/
 @property (assign, nonatomic) CGFloat trackHeight;
 
 @property (assign, nonatomic, getter=isBarrageWorking) BOOL barrageWorking;
