@@ -13,6 +13,10 @@
 		88BEB42F1C87EB61005E8F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BEB42D1C87EB61005E8F3E /* Main.storyboard */; };
 		88BEB4311C87EB61005E8F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BEB4301C87EB61005E8F3E /* Assets.xcassets */; };
 		88BEB4341C87EB61005E8F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BEB4321C87EB61005E8F3E /* LaunchScreen.storyboard */; };
+		88BEB43E1C880E7A005E8F3E /* BBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEB43D1C880E7A005E8F3E /* BBConfig.m */; };
+		88BEB4441C8819B0005E8F3E /* BBBarrage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEB4431C8819B0005E8F3E /* BBBarrage.m */; };
+		88BEB4471C881A94005E8F3E /* BBBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEB4461C881A94005E8F3E /* BBBarrageView.m */; };
+		88BEB44A1C892275005E8F3E /* BBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEB4491C892275005E8F3E /* BBEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		88BEB4301C87EB61005E8F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BEB4331C87EB61005E8F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88BEB4351C87EB61005E8F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BEB43C1C880E7A005E8F3E /* BBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBConfig.h; sourceTree = "<group>"; };
+		88BEB43D1C880E7A005E8F3E /* BBConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBConfig.m; sourceTree = "<group>"; };
+		88BEB4421C8819B0005E8F3E /* BBBarrage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBarrage.h; sourceTree = "<group>"; };
+		88BEB4431C8819B0005E8F3E /* BBBarrage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBarrage.m; sourceTree = "<group>"; };
+		88BEB4451C881A94005E8F3E /* BBBarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBarrageView.h; sourceTree = "<group>"; };
+		88BEB4461C881A94005E8F3E /* BBBarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBarrageView.m; sourceTree = "<group>"; };
+		88BEB4481C892275005E8F3E /* BBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEngine.h; sourceTree = "<group>"; };
+		88BEB4491C892275005E8F3E /* BBEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 		88BEB4181C87EB61005E8F3E = {
 			isa = PBXGroup;
 			children = (
+				88BEB43B1C880E38005E8F3E /* BurningBarrage */,
 				88BEB4231C87EB61005E8F3E /* BurningBarrageDemo */,
 				88BEB4221C87EB61005E8F3E /* Products */,
 			);
@@ -77,6 +90,21 @@
 				88BEB4251C87EB61005E8F3E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88BEB43B1C880E38005E8F3E /* BurningBarrage */ = {
+			isa = PBXGroup;
+			children = (
+				88BEB43C1C880E7A005E8F3E /* BBConfig.h */,
+				88BEB43D1C880E7A005E8F3E /* BBConfig.m */,
+				88BEB4421C8819B0005E8F3E /* BBBarrage.h */,
+				88BEB4431C8819B0005E8F3E /* BBBarrage.m */,
+				88BEB4481C892275005E8F3E /* BBEngine.h */,
+				88BEB4491C892275005E8F3E /* BBEngine.m */,
+				88BEB4451C881A94005E8F3E /* BBBarrageView.h */,
+				88BEB4461C881A94005E8F3E /* BBBarrageView.m */,
+			);
+			path = BurningBarrage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BEB44A1C892275005E8F3E /* BBEngine.m in Sources */,
 				88BEB42C1C87EB61005E8F3E /* ViewController.m in Sources */,
+				88BEB4441C8819B0005E8F3E /* BBBarrage.m in Sources */,
 				88BEB4291C87EB61005E8F3E /* AppDelegate.m in Sources */,
 				88BEB4261C87EB61005E8F3E /* main.m in Sources */,
+				88BEB43E1C880E7A005E8F3E /* BBConfig.m in Sources */,
+				88BEB4471C881A94005E8F3E /* BBBarrageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +337,7 @@
 				88BEB43A1C87EB61005E8F3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
